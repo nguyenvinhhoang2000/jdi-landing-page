@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Container .Line:nth-last-child(1) {
+  animation: loading 0.6s 0.1s linear infinite;
+}
+
+.Container .Line:nth-last-child(2) {
+  animation: loading 0.6s 0.2s linear infinite;
+}
+
+.Container .Line:nth-last-child(3) {
+  animation: loading 0.6s 0.3s linear infinite;
+}
+
+.Line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #4b9cdb;
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

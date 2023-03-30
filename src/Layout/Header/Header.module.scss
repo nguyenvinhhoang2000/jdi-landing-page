@@ -1,0 +1,53 @@
+.Header {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &Wrapper {
+    width: 100%;
+    background-color: #00110E;
+
+    position: fixed;
+
+    z-index: 10;
+  }
+
+  & .Logo {
+    height: 30px;
+    width: 148px;
+
+    padding: 39px 0;
+  }
+
+  & .Nav {
+    display: flex;
+    margin-left: 100px;
+
+    &Item {
+      & a {
+        padding: 0 20px;
+
+        color: #fff;
+        text-decoration: none;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+
+        transition: color .3s ease;
+
+        &:hover {
+          color: #00FFCE;
+        }
+      }
+
+      & a.active {
+        color: #00FFCE;
+      }
+    }
+  }
+
+  // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
