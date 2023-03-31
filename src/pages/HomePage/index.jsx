@@ -1,48 +1,16 @@
 import React from 'react';
 
-import { LOCATIONS } from 'constants/index';
-
-import AppButton from 'components/AppButton';
-import SocialLink from './components/SocialLink';
+import Banner from './components/Banner';
 
 import styles from './HomePage.module.scss';
 
 function HomePage() {
   return (
-    <div className={styles.HomeWrapper}>
-      <div className={styles.Home}>
-        <SocialLink />
+    <div className={styles.Home}>
+      <Banner />
 
-        <div className={styles.Content}>
-          <div className={styles.Title}>
-            <h1>
-              TURNING GREAT IDEAS INTO
-              {' '}
-              <span className={styles.TextGradient}>
-                INNOVATIVE
-              </span>
+      <div className={styles.Circle} />
 
-            </h1>
-
-            <span className={styles.TextGradient}>
-              SOLUTIONS
-            </span>
-          </div>
-
-          <span className={styles.SubTitle}>
-            We create works that revolutionize the way people think and work
-          </span>
-
-          <div className={styles.Btn}>
-            <AppButton
-              isLink
-              to={LOCATIONS.ABOUT_US}
-            >
-              About Us
-            </AppButton>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

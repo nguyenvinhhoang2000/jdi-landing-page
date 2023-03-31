@@ -1,0 +1,33 @@
+.Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-family: 'Nunito Bold Italic';
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  transition: opacity .2s ease-in, transform .2s ease-in;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
+
+  &:active {
+    transform: translateY(-6px);
+  }
+}
+
+.OutlineGradient {
+  background-image: url('./../../assets/Images/Buttons/outline-gradient.svg');
+}
+
+.BgGradient {
+  background-image: url('./../../assets/Images/Buttons/background-gradient.svg');
+}

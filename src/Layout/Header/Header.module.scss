@@ -6,7 +6,7 @@
 
   &Wrapper {
     width: 100%;
-    background-color: #00110E;
+    // background-color: #00110E;
 
     position: fixed;
 
@@ -31,8 +31,7 @@
         color: #fff;
         text-decoration: none;
 
-        font-style: normal;
-        font-weight: 600;
+        font-family: 'Nunito SemiBold';
         font-size: 16px;
         line-height: 22px;
 
@@ -48,6 +47,4 @@
       }
     }
   }
-
-  // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }

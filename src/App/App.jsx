@@ -3,11 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 
 import { LOCATIONS } from 'constants/index';
 
-import Layout from 'Layout';
-import LoadingPage from 'pages/LoadingPage';
-import HomePage from 'pages/HomePage';
-
 import './App.scss';
+
+const Layout = React.lazy(() => import('Layout'));
+const LoadingPage = React.lazy(() => import('pages/LoadingPage'));
+const HomePage = React.lazy(() => import('pages/HomePage'));
 
 function App() {
   return (

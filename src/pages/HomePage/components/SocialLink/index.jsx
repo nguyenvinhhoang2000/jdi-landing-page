@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import { LOCATIONS } from 'constants/index';
 
-import { ReactComponent as FbIcon } from 'assets/Images/Socials/facebook.svg';
-import { ReactComponent as LinkedInIcon } from 'assets/Images/Socials/linkedin.svg';
-import { ReactComponent as TwitterIcon } from 'assets/Images/Socials/twitter.svg';
-import { ReactComponent as TeleIcon } from 'assets/Images/Socials/telegram.svg';
+import { ReactComponent as FbIcon } from 'assets/Images/Icons/facebook.svg';
+import { ReactComponent as LinkedInIcon } from 'assets/Images/Icons/linkedin.svg';
+import { ReactComponent as TwitterIcon } from 'assets/Images/Icons/twitter.svg';
+import { ReactComponent as TeleIcon } from 'assets/Images/Icons/telegram.svg';
 
 import styles from './SocialLink.module.scss';
 

@@ -1,3 +1,5 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/default-props-match-prop-types */
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -26,14 +28,14 @@ function AppButton(props) {
     isLink ? (
       <Link
         to={to}
-        classNam={`${classes} ${outline ? styles.OutlineGradient : styles.BgGradient}`}
+        className={`${classes} ${styles.Btn} ${outline ? styles.OutlineGradient : styles.BgGradient}`}
       >
         {children}
       </Link>
     ) : (
       <button
         type={type}
-        className={`${classes} ${outline ? styles.OutlineGradient : styles.BgGradient}`}
+        className={`${classes} ${styles.Btn} ${outline ? styles.OutlineGradient : styles.BgGradient}`}
         disabled={loading || disabled}
         onClick={onclick}
       >
@@ -63,7 +65,7 @@ AppButton.propTypes = {
     PropTypes.instanceOf(Object),
   ]),
 
-  onclick: PropTypes.func.isRequired,
+  onclick: PropTypes.func,
 };
 
 AppButton.defaultProps = {
@@ -77,6 +79,8 @@ AppButton.defaultProps = {
   classes: '',
   name: 'Loading',
   children: '',
+
+  onClick: () => null,
 };
 
 export default AppButton;

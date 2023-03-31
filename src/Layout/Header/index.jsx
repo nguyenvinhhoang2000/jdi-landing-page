@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import { LOCATIONS } from 'constants/index';
 
-import logo from 'assets/jdi-logo.png';
+import logo from 'assets/Images/jdi-logo.png';
 
 import styles from './Header.module.scss';
 
