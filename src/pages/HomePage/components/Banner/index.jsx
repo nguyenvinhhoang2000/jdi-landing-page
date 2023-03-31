@@ -2,8 +2,8 @@ import React, { memo } from 'react';
 
 import { LOCATIONS } from 'constants/index';
 
-import manImg from 'assets/Images/Banners/man.png';
-import bgCircle from 'assets/Images/Banners/bg_circle.png';
+import manImg from 'assets/Images/Banner/man.png';
+import bgCircle from 'assets/Images/Banner/bg_circle.png';
 
 import AppButton from 'components/AppButton';
 import SocialLink from '../SocialLink';
