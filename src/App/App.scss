@@ -1,36 +1,52 @@
 @font-face {
-  font-family: 'Nunito Regular';
+  font-family: 'Nunito 300';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./../assets/Fonts/nunito/Nunito-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito 400';
   font-style: normal;
   font-weight: 400;
   src: url(./../assets/Fonts/nunito/Nunito-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito Medium';
+  font-family: 'Nunito 500';
   font-style: normal;
   font-weight: 500;
   src: url(./../assets/Fonts/nunito/Nunito-Medium.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito Medium Italic';
+  font-family: 'Nunito 500 Italic';
   font-style: italic;
   font-weight: 500;
   src: url(./../assets/Fonts/nunito/Nunito-MediumItalic.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito SemiBold';
+  font-family: 'Nunito 600';
   font-style: normal;
   font-weight: 600;
   src: url(./../assets/Fonts/nunito/Nunito-SemiBold.ttf);
 }
 
 @font-face {
-  font-family: 'Nunito Bold Italic';
+  font-family: 'Nunito 700 Italic';
   font-style: italic;
   font-weight: 700;
   src: url(./../assets/Fonts/nunito/Nunito-BoldItalic.ttf);
+}
+
+// Roboto
+
+@font-face {
+  font-family: 'Roboto 900 Italic';
+  font-style: italic;
+  font-weight: 900;
+  src: url(./../assets/Fonts/Roboto/Roboto-BoldItalic.ttf);
 }
 
 body {

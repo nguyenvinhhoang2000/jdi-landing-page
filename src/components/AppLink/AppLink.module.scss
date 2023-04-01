@@ -1,0 +1,26 @@
+.Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: 'Nunito 300';
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('./../../assets/Images/Services/outline-gradient.svg');
+
+  transition: opacity .2s ease-in, transform .2s ease-in;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
+}
