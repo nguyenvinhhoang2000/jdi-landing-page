@@ -2,7 +2,7 @@ export const LOCATIONS = {
   HOME: '/',
   ABOUT_US: '/about-us',
   SERVICES: '/services',
-  PROJECT: '/project',
+  PROJECTS: '/projects',
   TEAM: '/team',
   CONTACT_US: '/contact-us',
   PRESALE: '/#',

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './AppServicesCard.module.scss';
+import styles from './AppServiceCard.module.scss';
 
-function AppServicesCard(props) {
+function AppServiceCard(props) {
   const {
     classes,
 
@@ -19,7 +19,7 @@ function AppServicesCard(props) {
   );
 }
 
-AppServicesCard.propTypes = {
+AppServiceCard.propTypes = {
   classes: PropTypes.string,
 
   children: PropTypes.oneOfType([
@@ -28,9 +28,9 @@ AppServicesCard.propTypes = {
   ]),
 };
 
-AppServicesCard.defaultProps = {
+AppServiceCard.defaultProps = {
   classes: '',
   children: '',
 };
 
-export default AppServicesCard;
+export default AppServiceCard;

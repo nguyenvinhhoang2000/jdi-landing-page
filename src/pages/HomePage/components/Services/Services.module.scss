@@ -44,7 +44,7 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
 
-    background: -webkit-linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
+    background: -webkit-linear-gradient(290deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -64,5 +64,28 @@
     z-index: 2;
 
     position: relative;
+
+    & .Container {
+      overflow: hidden;
+    }
+
+    & button {
+      background-color: transparent;
+      border: 0;
+
+      position: absolute;
+
+      cursor: pointer;
+    }
+
+    & .Prev {
+      top: 50%;
+      left: -80px;
+    }
+
+    & .Next {
+      top: 50%;
+      right: -80px;
+    }
   }
 }

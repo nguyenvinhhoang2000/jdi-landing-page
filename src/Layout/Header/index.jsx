@@ -29,7 +29,7 @@ function Header() {
           </li>
 
           <li className={styles.NavItem}>
-            <NavLink to={LOCATIONS.PROJECT}>
+            <NavLink to={LOCATIONS.PROJECTS}>
               Project
             </NavLink>
           </li>
