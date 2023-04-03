@@ -1,18 +1,25 @@
 export const LOCATIONS = {
-  HOME: '/',
   ABOUT_US: '/about-us',
-  SERVICES: '/services',
-  PROJECTS: '/projects',
-  TEAM: '/team',
   CONTACT_US: '/contact-us',
-  PRESALE: '/#',
-  WHITEPAPER: 'https://docs.spaceai.id/',
+  HOME: '/',
+  PROJECTS: '/projects',
+  SERVICES: '/services',
+  TEAM: '/team',
 
   // socials
   FACEBOOK: 'https://www.facebook.com/',
   LINKED_IN: 'https://www.linkedin.com/',
-  TELEGRAM: 'https://t.me/spaceai2022',
-  TWITTER: 'https://twitter.com/spaceai2022?s=21&t=XsF2Q_ASFvkpWNBf7Ls5tw',
+  TELEGRAM: 'https://web.telegram.org/',
+  TWITTER: 'https://twitter.com/',
 };
 
-export const SITE_NAME = 'Space Ai';
+export const SITE_NAME = 'JDI One';
+
+export const CATEGORY_TYPE = {
+  SOCIAL_FI: 'SOCIAL_FI',
+  DEFi: 'DEFi',
+  BLOCKCHAIN_FOR_REAL: 'BLOCKCHAIN_FOR_REAL',
+  GAME_FI: 'GAME_FI',
+  AI: 'AI',
+  OTHERS: 'OTHERS',
+};

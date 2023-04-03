@@ -1,0 +1,45 @@
+.Category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1px;
+  background: rgba(0, 255, 206, 0.1);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+  transition: all .3s ease;
+
+  cursor: pointer;
+
+  &Wrapper {
+    display: flex;
+    gap: 12px;
+
+    flex-wrap: wrap;
+  }
+
+  & .Overlay {
+    height: calc(100% - 18px);
+    width: calc(100% - 46px);
+    padding: 9px 23px;
+
+    border-radius: 8px;
+    background: linear-gradient(150deg, rgba(6, 20, 18, 0.7) 32.05%, rgba(11, 38, 33, 0.7) 102%);
+
+    font-family: 'Nunito 500';
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    text-transform: uppercase;
+    backdrop-filter: blur(7px);
+
+    z-index: 3;
+  }
+}
+
+.Active {
+  background: linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
+}

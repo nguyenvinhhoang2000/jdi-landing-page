@@ -5,32 +5,26 @@ import styles from './AppProjectCard.module.scss';
 
 function AppProjectCard(props) {
   const {
-    classes,
 
-    children,
+    data,
   } = props;
+  console.log(data);
 
   return (
     <div
-      className={`${classes} ${styles.Card}`}
+      className={styles.Card}
     >
-      {children}
+      
     </div>
   );
 }
 
 AppProjectCard.propTypes = {
-  classes: PropTypes.string,
-
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.instanceOf(Object),
-  ]),
+  data: PropTypes.instanceOf(Object),
 };
 
 AppProjectCard.defaultProps = {
-  classes: '',
-  children: '',
+  data: '',
 };
 
 export default AppProjectCard;
