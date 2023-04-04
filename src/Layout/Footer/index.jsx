@@ -21,7 +21,9 @@ function Footer() {
 
       <div className={styles.Footer}>
         <div className={styles.Left}>
-          <JDILogo className={styles.Logo} />
+          <div className={styles.Logo}>
+            <JDILogo />
+          </div>
 
           <div className={styles.Content}>
             <div className={styles.Socials}>
