@@ -1,0 +1,68 @@
+.Team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  &Wrapper {
+    width: 100%;
+    background-color: #00110E;
+
+    position: relative;
+
+    overflow: hidden;
+
+    & .CricleBlur {
+      width: 1158px;
+      height: 1156px;
+
+      position: absolute;
+      left: calc(50% - 1158px/2);
+      top: calc(50% - 1156px/2 + 457.5px);
+
+      background: linear-gradient(40.14deg, #4895FF 14.37%, #4895FF 14.39%, #32B6F0 16.74%, #20D0E4 19.26%, #12E5DA 22.02%, #08F4D3 25.11%, #02FCCF 28.79%, #00FFCE 34.63%, #00C9FF 63.02%, #05C5FF 65.48%, #12BBFF 68.25%, #29A9FF 71.17%, #4890FF 74.19%, #7170FF 77.29%, #A349FF 80.47%, #DC1BFF 83.63%, #FF00FF 85.37%);
+      border-radius: 100%;
+      opacity: 0.3;
+      filter: blur(50px);
+    }
+  }
+
+  & .Link {
+    margin: 0 auto;
+    width: 166px;
+  }
+
+  & .Title {
+    display: block;
+    width: fit-content;
+
+    margin: 10px auto 60px auto;
+
+    font-family: 'Roboto 900 italic';
+    font-size: 52px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    background: linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #847BE7 67.19%, #D629F7 89.06%, #FF00FF 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .MemberWrapper {
+    display: flex;
+    margin: 0 -45px;
+    width: 1290px;
+
+    background-color: transparent;
+
+    gap: 30px;
+  }
+}

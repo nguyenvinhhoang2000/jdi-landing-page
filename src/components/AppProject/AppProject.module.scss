@@ -1,26 +1,153 @@
-.Link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 38px;
+.Project {
+  height: 378px;
+  max-width: 380px;
 
-  color: #fff;
-  text-decoration: none;
+  flex: 1 0 380px;
 
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-family: 'Nunito 300';
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url('./../../assets/Images/Services/outline-gradient.svg');
-
-  transition: opacity .2s ease-in, transform .2s ease-in;
-
-  cursor: pointer;
+  position: relative;
 
   &:hover {
-    opacity: .8;
+    & .Content {
+      border: 1px solid transparent;
+      bottom: 1px;
+
+      & .Decs {
+        height: 88px;
+
+        margin-bottom: 20px;
+      }
+
+    }
+
+    & .BgOverlay {
+      height: 332px;
+      border: 1px solid rgba(0, 255, 206, 0.5);
+      box-shadow: 0px 4px 24px rgba(0, 255, 206, 0.2);
+
+      & .Img {
+        top: -45px;
+      }
+    }
+  }
+
+  &Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 378px;
+
+    gap: 30px;
+  }
+
+  & .BgOverlay {
+    height: 298px;
+    width: calc(100% - 2px);
+
+    background: linear-gradient(119.25deg, rgba(40, 45, 44, 0.7) 32.05%, rgba(0, 17, 14, 0.49) 102%);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(7px);
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: height .6s ease, box-shadow .6s ease;
+
+    z-index: 1;
+
+    & .Img {
+      max-height: 100%;
+      max-width: 100%;
+
+      position: absolute;
+      top: -20px;
+      left: 50%;
+
+      transform: translateX(-50%);
+      overflow: hidden;
+      transition: top .6s ease;
+
+      z-index: 2;
+    }
+  }
+
+
+  & .Content {
+    padding: 21px 28px 22px;
+
+    color: #FFFFFF;;
+    border: 1px solid rgba(0, 17, 14, 0.7);
+    border-radius: 32px 32px 10px 10px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: bottom .3s ease, border .3s ease;
+
+    z-index: 4;
+
+    & .Blur {
+      width: 100%;
+      height: 100%;
+
+      background: rgba(0, 17, 14, 0.7);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(7px);
+
+      border-radius: 32px 32px 10px 10px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1;
+    }
+
+    & .Title {
+      margin-bottom: 20px;
+      font-family: 'Roboto 500';
+      font-size: 24px;
+
+      line-height: 120%;
+      letter-spacing: -0.02em;
+    }
+
+    & .Decs {
+      display: block;
+      line-clamp: 4;
+      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-box-orient: vertical;
+
+      height: 0;
+      width: 100%;
+      margin-bottom: 0;
+
+      font-family: 'Nunito 400';
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+
+      transition: height .6s ease, margin .6s ease;
+      overflow: hidden;
+
+      opacity: .9;
+    }
+
+    & .Category {
+      display: flex;
+      align-items: center;
+
+      font-family: 'Nunito 400';
+      font-size: 13px;
+      text-transform: uppercase;
+
+      opacity: .9;
+
+      & .Icon {
+        margin-right: 10px;
+      }
+    }
   }
 }

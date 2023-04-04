@@ -1,0 +1,53 @@
+.Advisor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  &Wrapper {
+    width: 100%;
+    background-color: #00110E;
+
+    position: relative;
+  }
+
+  & .Link {
+    margin: 0 auto;
+    width: 166px;
+  }
+
+  & .Title {
+    display: block;
+    width: fit-content;
+
+    margin: 10px auto 60px auto;
+
+    font-family: 'Roboto 900 italic';
+    font-size: 52px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    background: linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #847BE7 67.19%, #D629F7 89.06%, #FF00FF 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .MemberWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 -45px;
+    width: 1290px;
+
+    background-color: transparent;
+
+    gap: 30px;
+  }
+}

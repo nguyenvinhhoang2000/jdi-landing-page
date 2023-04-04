@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './AppServiceCard.module.scss';
@@ -33,4 +33,4 @@ AppServiceCard.defaultProps = {
   children: '',
 };
 
-export default AppServiceCard;
+export default memo(AppServiceCard);

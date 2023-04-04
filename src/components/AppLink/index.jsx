@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
@@ -6,6 +6,7 @@ import styles from './AppLink.module.scss';
 
 function AppLink(props) {
   const {
+    size,
     classes,
     to,
 
@@ -15,7 +16,7 @@ function AppLink(props) {
   return (
     <Link
       to={to}
-      className={`${classes} ${styles.Link}`}
+      className={`${classes} ${styles.Link} ${size === 'lg' ? styles.Lg : styles.Md}`}
     >
       {children}
     </Link>
@@ -24,6 +25,7 @@ function AppLink(props) {
 
 AppLink.propTypes = {
   to: PropTypes.string,
+  size: PropTypes.string,
   classes: PropTypes.string,
 
   children: PropTypes.oneOfType([
@@ -34,8 +36,9 @@ AppLink.propTypes = {
 
 AppLink.defaultProps = {
   to: '/',
+  size: 'lg',
   classes: '',
   children: '',
 };
 
-export default AppLink;
+export default memo(AppLink);

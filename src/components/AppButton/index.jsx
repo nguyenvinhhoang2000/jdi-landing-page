@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/default-props-match-prop-types */
 /* eslint-disable react/button-has-type */
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
@@ -83,4 +83,4 @@ AppButton.defaultProps = {
   onClick: () => null,
 };
 
-export default AppButton;
+export default memo(AppButton);

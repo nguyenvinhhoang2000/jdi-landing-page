@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './AppProjectCard.module.scss';
@@ -13,9 +13,7 @@ function AppProjectCard(props) {
   return (
     <div
       className={styles.Card}
-    >
-      
-    </div>
+    />
   );
 }
 
@@ -27,4 +25,4 @@ AppProjectCard.defaultProps = {
   data: '',
 };
 
-export default AppProjectCard;
+export default memo(AppProjectCard);

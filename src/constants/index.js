@@ -17,7 +17,7 @@ export const SITE_NAME = 'JDI One';
 
 export const CATEGORY_TYPE = {
   SOCIAL_FI: 'SOCIAL_FI',
-  DEFi: 'DEFi',
+  DEFI: 'DEFI',
   BLOCKCHAIN_FOR_REAL: 'BLOCKCHAIN_FOR_REAL',
   GAME_FI: 'GAME_FI',
   AI: 'AI',

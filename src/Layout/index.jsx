@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Footer from './Footer';
@@ -24,4 +24,4 @@ Layout.propTypes = {
 
 };
 
-export default Layout;
+export default memo(Layout);

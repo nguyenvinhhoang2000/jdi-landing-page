@@ -1,6 +1,8 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
+import { CATEGORY_TYPE } from 'constants/index';
+
 import styles from './AppCategory.module.scss';
 
 function AppCategory(props) {
@@ -41,7 +43,7 @@ AppCategory.propTypes = {
 AppCategory.defaultProps = {
   data: {},
 
-  selected: '',
+  selected: CATEGORY_TYPE.SOCIAL_FI,
 };
 
 export default memo(AppCategory);

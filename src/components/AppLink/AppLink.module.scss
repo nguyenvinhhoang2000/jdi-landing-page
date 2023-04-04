@@ -14,7 +14,6 @@
   font-family: 'Nunito 300';
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url('./../../assets/Images/Services/outline-gradient.svg');
 
   transition: opacity .2s ease-in, transform .2s ease-in;
 
@@ -23,4 +22,12 @@
   &:hover {
     opacity: .8;
   }
+}
+
+.Lg {
+  background-image: url('./../../assets/Images/Buttons/link-outline-lg.svg');
+}
+
+.Md {
+  background-image: url('./../../assets/Images/Buttons/link-outline-md.svg');
 }

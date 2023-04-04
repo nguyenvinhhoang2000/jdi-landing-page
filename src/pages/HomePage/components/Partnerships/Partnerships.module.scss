@@ -1,0 +1,67 @@
+.Partner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  &Wrapper {
+    width: 100%;
+    background-color: #00110E;
+
+    position: relative;
+
+    overflow: hidden;
+
+    & .CricleBlur {
+      width: 477px;
+      height: 477px;
+
+      position: absolute;
+      left: calc(50% - 477px/2 - 610.5px);
+      top: calc(50% - 477px/2 - 152px);
+
+      border-radius: 100%;
+      background: linear-gradient(40.14deg, #4895FF 14.37%, #4895FF 14.39%, #32B6F0 16.74%, #20D0E4 19.26%, #12E5DA 22.02%, #08F4D3 25.11%, #02FCCF 28.79%, #00FFCE 34.63%, #00C9FF 63.02%, #05C5FF 65.48%, #12BBFF 68.25%, #29A9FF 71.17%, #4890FF 74.19%, #7170FF 77.29%, #A349FF 80.47%, #DC1BFF 83.63%, #FF00FF 85.37%);
+      opacity: 0.1;
+      filter: blur(25px);
+    }
+  }
+
+  & .Title {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 50px;
+
+    font-family: 'Roboto 900 italic';
+    font-size: 52px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    background: linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .Item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 105px;
+    width: 182px;
+
+    background: linear-gradient(119.25deg, rgba(4, 6, 6, 0.5) 32.05%, rgba(3, 36, 30, 0.35) 102%);
+    border: 1px solid rgba(0, 255, 206, 0.1);
+    backdrop-filter: blur(7px);
+
+    border-radius: 10px;
+
+    &Wrapper {
+      display: flex;
+      gap: 22px;
+    }
+  }
+}

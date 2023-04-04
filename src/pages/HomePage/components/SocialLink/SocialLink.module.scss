@@ -22,11 +22,14 @@
 
     cursor: pointer;
 
-    // & svg {
-    //   * {
-    //     fill: red;
+    & * {
+      transition: stroke .3s ease, fill .3s ease;
+    }
 
-    //   }
-    // }
+    &:hover {
+      & * {
+        stroke: #00FFCE;
+      }
+    }
   }
 }

@@ -25,20 +25,36 @@ function Footer() {
 
           <div className={styles.Content}>
             <div className={styles.Socials}>
-              <Link to={LOCATIONS.FACEBOOK} target="_blank">
-                <FbIcon className={styles.Icon} />
+              <Link
+                className={styles.Icon}
+                to={LOCATIONS.FACEBOOK}
+                target="_blank"
+              >
+                <FbIcon />
               </Link>
 
-              <Link to={LOCATIONS.LINKED_IN} target="_blank">
-                <LinkedInIcon className={styles.Icon} />
+              <Link
+                className={styles.Icon}
+                to={LOCATIONS.LINKED_IN}
+                target="_blank"
+              >
+                <LinkedInIcon />
               </Link>
 
-              <Link to={LOCATIONS.TWITTER} target="_blank">
-                <TwitterIcon className={styles.Icon} />
+              <Link
+                className={styles.Icon}
+                to={LOCATIONS.TWITTER}
+                target="_blank"
+              >
+                <TwitterIcon />
               </Link>
 
-              <Link to={LOCATIONS.TELEGRAM} target="_blank">
-                <TeleIcon className={styles.Icon} />
+              <Link
+                className={styles.Icon}
+                to={LOCATIONS.TELEGRAM}
+                target="_blank"
+              >
+                <TeleIcon />
               </Link>
             </div>
 

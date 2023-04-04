@@ -34,6 +34,13 @@
 }
 
 @font-face {
+  font-family: 'Nunito 700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./../assets/Fonts/nunito/Nunito-Bold.ttf);
+}
+
+@font-face {
   font-family: 'Nunito 700 Italic';
   font-style: italic;
   font-weight: 700;
@@ -41,6 +48,13 @@
 }
 
 // Roboto
+
+@font-face {
+  font-family: 'Roboto 500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./../assets/Fonts/Roboto/Roboto-Medium.ttf);
+}
 
 @font-face {
   font-family: 'Roboto 900 Italic';
