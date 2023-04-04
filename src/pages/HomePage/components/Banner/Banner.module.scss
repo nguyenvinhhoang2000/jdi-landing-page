@@ -7,13 +7,11 @@
   &Wrapper {
     width: 100%;
 
-
     position: relative;
 
     overflow: hidden;
 
     & .BackgroundCircle {
-
       position: absolute;
       top: 0;
       right: 0;
@@ -47,9 +45,7 @@
       margin-bottom: 20px;
 
       & h1 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
+        font-family: 'Roboto 900';
         font-size: 52px;
 
         line-height: 120%;
@@ -58,34 +54,30 @@
 
       & .TextGradient1 {
         padding-right: 10px;
-        font-family: 'Roboto';
-        font-style: italic;
-        font-weight: 900;
+        font-family: 'Roboto 900 italic';
         font-size: 52px;
 
         line-height: 120%;
         letter-spacing: -0.02em;
 
         background: -webkit-linear-gradient(360deg, #00FFCE 31.77%, #FF00FF 150%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
       }
 
       & .TextGradient2 {
         padding-right: 10px;
-        font-family: 'Roboto';
-        font-style: italic;
-        font-weight: 900;
+        font-family: 'Roboto 900 italic';
         font-size: 52px;
 
         line-height: 120%;
         letter-spacing: -0.02em;
 
         background: -webkit-linear-gradient(360deg, #4895FF -30%, #00FFCE 80%, #FF00FF 150%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
       }
     }
 
@@ -114,6 +106,215 @@
         width: 200px;
         height: 48px;
         line-height: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 40px;
+
+    &Wrapper {
+      & .BackgroundCircle {
+        width: 900px;
+        top: auto;
+        bottom: -50px;
+      }
+
+      & .BackgroundBanner {
+        height: auto;
+        width: 640px;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &Wrapper {
+      & .BackgroundCircle {
+        width: 830px;
+        bottom: -180px;
+      }
+
+      & .BackgroundBanner {
+        height: auto;
+        width: 470px;
+      }
+    }
+
+    & .Content {
+      padding: 180px 0 100px 0;
+      max-width: 450px;
+
+      & h1 {
+        font-size: 42px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 42px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 42px !important;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &Wrapper {
+      & .BackgroundCircle {
+        width: 650px;
+        bottom: -120px;
+      }
+
+      & .BackgroundBanner {
+        height: auto;
+        width: 380px;
+      }
+    }
+
+    & .Content {
+      & h1 {
+        font-size: 42px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 42px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 42px !important;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    &Wrapper {
+      & .BackgroundCircle {
+        width: 550px;
+        bottom: -80px;
+      }
+
+      & .BackgroundBanner {
+        height: auto;
+        width: 320px;
+      }
+    }
+
+    & .Content {
+      padding: 150px 0 50px 0;
+      max-width: 340px;
+
+      & h1 {
+        font-size: 32px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 32px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 32px !important;
+      }
+
+      & .SubTitle {
+        font-size: 18px;
+      }
+
+      & .Btn {
+        &About {
+          font-size: 14px;
+        }
+
+        &Project {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &Wrapper {
+      & .BackgroundCircle {
+        width: 500px;
+        bottom: -100px;
+      }
+
+      & .BackgroundBanner {
+        height: auto;
+        width: 280px;
+      }
+    }
+
+    & .Content {
+      padding: 130px 0 25px 0;
+      max-width: 270px;
+
+      & h1 {
+        font-size: 26px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 26px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 26px !important;
+      }
+
+      & .SubTitle {
+        margin-bottom: 30px;
+
+        line-height: 130%;
+      }
+    }
+  }
+
+  @media (max-width: 670px) {
+    &Wrapper {
+      & .BackgroundCircle {
+        display: none;
+      }
+
+      & .BackgroundBanner {
+        display: none;
+      }
+    }
+
+    & .Content {
+      padding: 130px 0 50px 0;
+
+      & h1 {
+        font-size: 26px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 26px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 26px !important;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    & .Content {
+      margin: 0;
+      padding: 100px 0 25px 0;
+
+      & h1 {
+        font-size: 22px !important;
+      }
+
+      & .TextGradient1 {
+        font-size: 22px !important;
+      }
+
+      & .TextGradient2 {
+        font-size: 22px !important;
+      }
+
+      & .SubTitle {
+        font-size: 16px;
       }
     }
   }

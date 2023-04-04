@@ -196,12 +196,32 @@
       & .Logo {
         justify-content: center;
       }
+
+      & .Content {
+        text-align: center;
+
+        & .Socials {
+          justify-content: center;
+        }
+      }
     }
 
     .Right {
       flex-direction: column;
       align-items: center;
       gap: 60px;
+
+      text-align: center;
+
+      & .Location {
+        & .Title {
+          justify-content: center;
+        }
+
+        & .Address {
+          margin: 0 0 2px 0;
+        }
+      }
     }
   }
 
