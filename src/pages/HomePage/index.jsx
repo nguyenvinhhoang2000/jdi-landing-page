@@ -15,7 +15,7 @@ function HomePage() {
     <div className={styles.Home}>
       <Banner />
 
-      <div className={styles.Circle} />
+      <div className={styles.CircleBanner} />
 
       <Services />
 
@@ -28,6 +28,8 @@ function HomePage() {
       <MeetOurTeam />
 
       <MeetOurAdvisors />
+
+      <div className={styles.CircleAdvisor} />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 
   overflow-x: hidden;
 
-  & .Circle {
+  & .CircleBanner {
     height: 252px;
     width: 252px;
 
@@ -15,11 +15,27 @@
 
     transform: translateX(44px);
 
-    background-image: linear-gradient(40.14deg, #4895FF 14.37%, #4895FF 14.39%, #32B6F0 16.74%, #20D0E4 19.26%, #12E5DA 22.02%, #08F4D3 25.11%, #02FCCF 28.79%, #00FFCE 34.63%, #00C9FF 63.02%, #05C5FF 65.48%, #12BBFF 68.25%, #29A9FF 71.17%, #4890FF 74.19%, #7170FF 77.29%, #A349FF 80.47%, #DC1BFF 83.63%, #FF00FF 85.37%);;
+    background-image: linear-gradient(40.14deg, #4895FF 14.37%, #4895FF 14.39%, #32B6F0 16.74%, #20D0E4 19.26%, #12E5DA 22.02%, #08F4D3 25.11%, #02FCCF 28.79%, #00FFCE 34.63%, #00C9FF 63.02%, #05C5FF 65.48%, #12BBFF 68.25%, #29A9FF 71.17%, #4890FF 74.19%, #7170FF 77.29%, #A349FF 80.47%, #DC1BFF 83.63%, #FF00FF 85.37%);
     opacity: .6;
     animation: animationCircle 4s infinite;
 
     z-index: 3;
+  }
+
+  & .CircleAdvisor {
+    height: 143px;
+    width: 143px;
+
+    border-radius: 100%;
+
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+
+
+    background: linear-gradient(40.14deg, #4895FF 14.37%, #4895FF 14.39%, #32B6F0 16.74%, #20D0E4 19.26%, #12E5DA 22.02%, #08F4D3 25.11%, #02FCCF 28.79%, #00FFCE 34.63%, #00C9FF 63.02%, #05C5FF 65.48%, #12BBFF 68.25%, #29A9FF 71.17%, #4890FF 74.19%, #7170FF 77.29%, #A349FF 80.47%, #DC1BFF 83.63%, #FF00FF 85.37%);
+
+    z-index: 0;
   }
 }
 
