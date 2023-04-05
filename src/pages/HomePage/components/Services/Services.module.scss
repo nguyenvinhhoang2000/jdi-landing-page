@@ -10,6 +10,10 @@
 
   z-index: 2;
 
+  @media (max-width: 576px) {
+    padding: 60px 0 60px 0;
+  }
+
   &Wrapper {
     width: 100%;
 
@@ -30,6 +34,10 @@
   & .Link {
     width: 207px;
     margin-bottom: 10px;
+
+    @media (max-width: 576px) {
+      width: 180px;
+    }
   }
 
   & .Title {
@@ -47,6 +55,11 @@
     background: -webkit-linear-gradient(290deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+      font-size: 36px;
+    }
   }
 
   & .Decs {
@@ -55,8 +68,15 @@
     color: #FFFFFF;
     font-family: 'Nunito 400';
     font-size: 18px;
+    text-align: center;
     line-height: 25px;
     letter-spacing: -0.02em;
+
+    @media (max-width: 576px) {
+      padding: 0 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
   }
 
   & .Slider {
@@ -64,6 +84,14 @@
     z-index: 2;
 
     position: relative;
+
+    @media (max-width: 1400px) {
+      width: calc(100% - 160px);
+    }
+
+    @media (max-width: 576px) {
+      width: calc(100% - 40px);
+    }
 
     & .Container {
       overflow: hidden;
@@ -81,11 +109,19 @@
     & .Prev {
       top: 50%;
       left: -80px;
+
+      @media (max-width: 576px) {
+        display: none;
+      }
     }
 
     & .Next {
       top: 50%;
       right: -80px;
+
+      @media (max-width: 576px) {
+        display: none;
+      }
     }
   }
 }

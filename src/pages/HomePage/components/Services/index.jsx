@@ -1,8 +1,7 @@
 import React, {
   memo, useCallback, useEffect, useState,
 } from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-import Swiper from 'swiper';
+import Swiper, { Pagination } from 'swiper';
 
 import { LOCATIONS } from 'constants/index';
 
@@ -15,14 +14,17 @@ import nextSlide from 'assets/Images/Services/arrow-right.svg';
 import ServicesCard from '../ServicesCard';
 
 import 'swiper/css';
+import 'swiper/css/pagination';
 import styles from './Services.module.scss';
 
 function Services() {
   const [swiper, setSwiper] = useState(null);
+  console.log(swiper.onTouchMove);
 
   const handlePrev = useCallback(() => {
     if (swiper) {
       swiper.slidePrev();
+      console.log(swiper);
     }
   }, [swiper]);
 
@@ -33,16 +35,20 @@ function Services() {
   }, [swiper]);
 
   useEffect(() => {
-    const swiperInstance = new Swiper('.swiper-container', {
+    const swiperInstance = new Swiper('.swiper', {
       slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      modules: [Pagination],
       breakpoints: {
         0: {
           slidesPerView: 1,
           spaceBetween: 30,
         },
-        576: {
+        900: {
           slidesPerView: 2,
           spaceBetween: 30,
         },
@@ -77,7 +83,7 @@ function Services() {
         </div>
 
         <div className={styles.Slider}>
-          <div className={`${styles.Container} swiper-container`}>
+          <div className={`${styles.Container} swiper`}>
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <ServicesCard />
@@ -107,6 +113,8 @@ function Services() {
                 <ServicesCard />
               </div>
             </div>
+
+            <div className="swiper-pagination" />
           </div>
 
           <button className={styles.Prev} type="button" onClick={handlePrev}>
