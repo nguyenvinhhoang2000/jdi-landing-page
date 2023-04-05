@@ -97,6 +97,21 @@
       overflow: hidden;
     }
 
+    & .Pagination {
+      display: none;
+
+      position: absolute;
+      bottom: -40px;
+
+      & span {
+        background-color: #fff;
+      }
+
+      @media (max-width: 576px) {
+        display: block;
+      }
+    }
+
     & button {
       background-color: transparent;
       border: 0;

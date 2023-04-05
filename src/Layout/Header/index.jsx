@@ -12,18 +12,19 @@ import styles from './Header.module.scss';
 function Header() {
   const location = useLocation();
 
+  // eslint-disable-next-line no-unused-vars
   const [isSticky, setIsSticky] = useState(false);
   const [isShowMenu, setIsShowMenu] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+  // window.addEventListener('scroll', () => {
+  //   const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 0) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  });
+  //   if (currentScroll > 0) {
+  //     setIsSticky(true);
+  //   } else {
+  //     setIsSticky(false);
+  //   }
+  // });
 
   const onCloseMenu = useCallback(() => {
     setIsShowMenu(false);

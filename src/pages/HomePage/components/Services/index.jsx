@@ -112,8 +112,9 @@ function Services() {
               </div>
             </div>
 
-            <div className="swiper-pagination" />
           </div>
+
+          <div className={`${styles.Pagination} swiper-pagination`} />
 
           <button className={styles.Prev} type="button" onClick={handlePrev}>
             <img src={prevSlide} alt="Next Slide" />
