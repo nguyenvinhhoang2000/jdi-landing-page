@@ -19,12 +19,10 @@ import styles from './Services.module.scss';
 
 function Services() {
   const [swiper, setSwiper] = useState(null);
-  console.log(swiper.onTouchMove);
 
   const handlePrev = useCallback(() => {
     if (swiper) {
       swiper.slidePrev();
-      console.log(swiper);
     }
   }, [swiper]);
 
