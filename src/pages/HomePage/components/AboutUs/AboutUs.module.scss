@@ -8,25 +8,79 @@
 
   overflow: hidden;
 
+  @media (max-width: 1200px) {
+    padding: 80px 40px 47px 40px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    padding: 40px 40px 47px 40px;
+  }
+
   &Wrapper {
     width: 100%;
   }
 
   & .ImgWrapper {
+    display: flex;
     position: relative;
 
-    & .Background {
+    @media (max-width: 900px) {
+      margin-top: 100px;
+      justify-content: center;
+    }
 
+    @media (max-width: 576px) {
+      margin-top: 80px;
+    }
+
+    & .Background {
       position: absolute;
       top: -62px;
       left: -108px;
+
+      @media (max-width: 1200px) {
+        width: 545px;
+        top: -56px;
+        left: -97px;
+
+        transform: translateY(60px);
+      }
+
+      @media (max-width: 900px) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 576px) {
+        top: 11px;
+        width: 436px;
+      }
     }
 
     & .Img {
-
       position: absolute;
       top: 0;
       left: 0;
+
+      @media (max-width: 1200px) {
+        transform: translateY(60px);
+        width: 350px;
+      }
+
+      @media (max-width: 900px) {
+        position: relative;
+        transform: translateY(56px);
+      }
+
+      @media (max-width: 576px) {
+        width: 280px;
+      }
     }
   }
 
@@ -36,12 +90,36 @@
 
     position: relative;
 
+    @media (max-width: 1200px) {
+      width: 50%;
+    }
+
+    @media (max-width: 900px) {
+      margin-top: 50px;
+      width: 100%;
+      max-width: none;
+    }
+
     & .Link {
       width: 190px;
 
       position: absolute;
       top: 0;
       left: -31px;
+
+      @media (max-width: 900px) {
+        top: -600px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
+
+      @media (max-width: 576px) {
+        top: -480px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
     }
 
     & h1 {
@@ -49,9 +127,7 @@
       margin-top: 48px;
       margin-bottom: 30px;
 
-      font-family: 'Roboto';
-      font-style: italic;
-      font-weight: 900;
+      font-family: 'Roboto 900 italic';
       font-size: 52px;
       line-height: 120%;
 
@@ -59,23 +135,32 @@
       text-transform: uppercase;
 
       background: linear-gradient(93.01deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
     }
 
     & .SubTitle {
       display: block;
       margin-bottom: 30px;
 
-      font-family: 'Roboto';
-      font-weight: 800;
+      font-family: 'Roboto 700';
       font-size: 24px;
       line-height: 28px;
       letter-spacing: -0.02em;
 
       color: #FFFFFF;
+
+      @media (max-width: 576px) {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
     }
 
     & .Decs {
@@ -92,6 +177,10 @@
       & a {
         color: #00FFCE;
         font-family: 'Nunito 400';
+      }
+
+      @media (max-width: 576px) {
+        font-size: 12px;
       }
     }
   }
