@@ -90,7 +90,7 @@ const PROJECT_LIST = [
     categoryLabel: 'DEFi',
     category: CATEGORY_TYPE.DEFI,
     image: img6,
-    decs: 'Getdone is a blockchain-powered platform that helps clients Pay for talents or services from partners/ sellers in Cryptocurrencies securely & quickly via Smart Contract Solution.Getdone is a blockchain-powered platform that helps clients Pay for talents or services from partners/ sellers in Cryptocurrencies securely & quickly via Smart Contract Solution.',
+    decs: 'Getdone is a blockchain-poweredGetdone is a blockchain-poweredGetdone is a blockchain-powered platform that helps clients Pay for talents or services from partners/ sellers in Cryptocurrencies securely & quickly via Smart Contract Solution.Getdone is a blockchain-powered platform that helps clients Pay for talents or services from partners/ sellers in Cryptocurrencies securely & quickly via Smart Contract Solution.',
   },
 ];
 

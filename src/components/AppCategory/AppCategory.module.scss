@@ -18,6 +18,10 @@
     gap: 12px;
 
     flex-wrap: wrap;
+
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
   }
 
   & .Overlay {
@@ -37,6 +41,10 @@
     backdrop-filter: blur(7px);
 
     z-index: 3;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
   }
 }
 

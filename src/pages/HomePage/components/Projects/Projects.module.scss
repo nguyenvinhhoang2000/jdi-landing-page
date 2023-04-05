@@ -8,6 +8,14 @@
   padding-top: 60px;
   padding-bottom: 73px;
 
+  @media (max-width: 1400px) {
+    padding: 60px 40px 73px 40px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
+
   &Wrapper {
     width: 100%;
   }
@@ -15,10 +23,27 @@
   & .Content {
     max-width: 600px;
 
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
+
     & .Link {
       width: 180px;
 
       transform: translateX(-31px);
+
+      @media (max-width: 1400px) {
+        transform: translateX(-15px);
+      }
+
+      @media (max-width: 576px) {
+        transform: translateX(0);
+        font-size: 13px;
+      }
     }
 
     & .Title {
@@ -38,6 +63,11 @@
       background: -webkit-linear-gradient(345deg, #4895FF 0%, #00FFCE 31.77%, #FF00FF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media (max-width: 576px) {
+        display: block;
+        font-size: 36px;
+      }
     }
 
     & .SubTitle {
@@ -50,10 +80,18 @@
       letter-spacing: -0.02em;
 
       color: #FFFFFF;
+
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
     }
   }
 
   & .ProjectContainer{
     margin-top: 60px;
+
+    @media (max-width: 576px) {
+      margin-top: 30px;
+    }
   }
 }

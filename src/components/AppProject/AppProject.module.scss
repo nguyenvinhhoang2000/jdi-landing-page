@@ -2,9 +2,16 @@
   height: 378px;
   max-width: 380px;
 
-  flex: 1 0 380px;
+  flex: 1 1 380px;
 
   position: relative;
+
+  @media (max-width: 576px) {
+    height: 320px;
+    max-width: 280px;
+
+    flex: 1 1 280px;
+  }
 
   &:hover {
     & .Content {
@@ -12,9 +19,14 @@
       bottom: 1px;
 
       & .Decs {
-        height: 88px;
+        height: 75px;
 
         margin-bottom: 20px;
+
+        @media (max-width: 576px) {
+          height: 64px;
+          margin-bottom: 15px;
+        }
       }
 
     }
@@ -26,6 +38,14 @@
 
       & .Img {
         top: -45px;
+
+        @media (max-width: 576px) {
+          top: -25px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        height: 280px;
       }
     }
   }
@@ -36,6 +56,14 @@
     min-height: 378px;
 
     gap: 30px;
+
+    @media (max-width: 886px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+      gap: 15px;
+    }
   }
 
   & .BgOverlay {
@@ -56,6 +84,10 @@
 
     z-index: 1;
 
+    @media (max-width: 576px) {
+      height: 248px;
+    }
+
     & .Img {
       max-height: 100%;
       max-width: 100%;
@@ -69,6 +101,12 @@
       transition: top .6s ease;
 
       z-index: 2;
+
+      & img {
+        @media (max-width: 576px) {
+          max-width: 230px;
+        }
+      }
     }
   }
 
@@ -87,6 +125,10 @@
     transition: bottom .3s ease, border .3s ease;
 
     z-index: 4;
+
+    // @media (max-width: 576px) {
+    //   padding: 10px 28px 22px;
+    // }
 
     & .Blur {
       width: 100%;
@@ -112,16 +154,19 @@
 
       line-height: 120%;
       letter-spacing: -0.02em;
+
+      @media (max-width: 576px) {
+        font-size: 18px;
+      }
     }
 
     & .Decs {
-      display: block;
+      display: -webkit-box;
       line-clamp: 4;
-      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
 
       height: 0;
-      width: 100%;
       margin-bottom: 0;
 
       font-family: 'Nunito 400';
@@ -130,9 +175,13 @@
       letter-spacing: -0.02em;
 
       transition: height .6s ease, margin .6s ease;
-      overflow: hidden;
 
+      overflow: hidden;
       opacity: .9;
+
+      @media (max-width: 576px) {
+        font-size: 13px;
+      }
     }
 
     & .Category {
@@ -144,6 +193,10 @@
       text-transform: uppercase;
 
       opacity: .9;
+
+      @media (max-width: 576px) {
+        font-size: 14px;
+      }
 
       & .Icon {
         margin-right: 10px;
