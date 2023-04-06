@@ -8,9 +8,16 @@
   margin: 0 auto;
   padding: 60px 0;
 
+  @media (max-width: 1400px) {
+    padding: 60px 40px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+  }
+
   &Wrapper {
     width: 100%;
-
 
     position: relative;
 
@@ -34,6 +41,10 @@
   & .Link {
     margin: 0 auto;
     width: 166px;
+
+    @media (max-width: 576px) {
+      width: 140px;
+    }
   }
 
   & .Title {
@@ -54,15 +65,29 @@
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 576px) {
+      font-size: 36px;
+      white-space: nowrap;
+    }
   }
 
   & .MemberWrapper {
     display: flex;
     margin: 0 -45px;
-    width: 1290px;
+    max-width: 1290px;
 
     background-color: transparent;
 
     gap: 30px;
+
+    @media (max-width: 1400px) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   }
 }
